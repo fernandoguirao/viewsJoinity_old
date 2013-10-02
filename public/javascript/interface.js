@@ -10,8 +10,7 @@ $('.jLeftBar .ui.dropdown')
 
 /* Dropdown selector en jRightBar */
 $('.jRightBar .dropdown')
-  .dropdown({
-  })
+  .dropdown({action: 'updateForm'})
 ;
 
 /* Acordeón de jLeftBar joinitys */
