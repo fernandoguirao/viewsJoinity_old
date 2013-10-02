@@ -1,1 +1,84 @@
-p Esta es la barra izquierda
+.item
+  h1.ui.header
+    // Al hacer click nos debe llevar a la home de Joinity
+    a(href="").
+      Joinity
+    // Si hay notificaciones añadimos el número y la clase hasNotifications | Nota para Fernando: eliminar clase .red 
+    .ui.teal.buttons
+      .ui.dropdown.pointing.left.label.button.red 3
+        .menu.ui
+          .item
+            h4 Notifications
+          // A continuación los diferentes tipos de notificación. Atención a sus variables y a los enlaces a sus páginas
+          .item
+            a(href="") nombreUsuario apellidoUsuario sent you a message
+          .item
+            a(href="") nombreUsuario apellidoUsuario has assign you a task
+          .item
+            a(href="") nombreUsuario apellidoUsuario has invite you to the event 'eventName'
+          .item
+            a(href="") nombreUsuario apellidoUsuario has invited you to the joinity 'joinityName'
+          .item
+            a(href="") Today is the deadline for the task 'taskName'
+          // Plural: pendent payings; singular: a pendent payment
+          .item
+            a(href="") You have pendent payments. Go to your shopping cart now.
+
+.item.ui.two.column.grid
+  .column
+    img.rounded.ui.image(src="images/joinity-temp/avatar.jpeg")
+  .column
+    // Añadir enlaces páginas
+    .item
+      a(href="") My profile
+    .item
+      a(href="") Contacts
+    .item
+      a(href="") Bills
+    .item
+      a(href="") Settings
+
+.item
+  //Enlace a página
+  a.fluid.ui.button(href="") Create a joinity
+
+.item
+  //Dispara acción buscar
+  a.fluid.ui.button(href="")
+    i.search.icon
+
+.item.ui.accordion
+  //Asignamos una imagen específica para cada tipo de joinity (hobbies, compras y aficiones)
+  .active.title
+    img.ui.avatar.image(src="images/joinity-temp/avatar.jpeg")
+    | Hobbies
+  .content
+    // Lista de categorías de tipo de joinity del usuario (ejemplo: ajedrez, surf, etc.)
+    .item
+      a(href="") myHobbyCathegory01
+    .item
+      a(href="") myHobbyCathegory02
+  .active.title
+    img.ui.avatar.image(src="images/joinity-temp/avatar.jpeg")
+    | Shoppings
+  .content
+    .item
+      a(href="") myHobbyCathegory01
+    .item
+      a(href="") myHobbyCathegory02
+  .active.title
+    img.ui.avatar.image(src="images/joinity-temp/avatar.jpeg")
+    | Family & friends
+  .content
+    .item
+      a(href="") myHobbyCathegory01
+    .item
+      a(href="") myHobbyCathegory02
+.item
+  a(href="") my Tasks
+.item
+  a(href="") my Events
+.item
+  a(href="") my Shoppings
+.item
+  a(href="") Messages

@@ -4,19 +4,17 @@ block head
 
 block content
 
-  //Variable nombrePagina
-  #nombrePagina
-    .jHeader
+  //Variable nombrePagina -> Ej: #home
+  #nombrePagina.ui.grid
+    .jHeader.sixteen.wide.column
       include ../includes/header
       
-    .jSideBar
+    .jLeftBar.four.wide.column.ui.vertical.menu
       include ../includes/leftBar
     
-    .jMainContent
+    .jMainContent.ten.wide.column
       include ../home/body
-      
-    .jRightBar
+        .jFooter
+          include ../includes/footer
+    .jRightBar.two.wide.column
       include ../includes/rightBar
-      
-    .jFooter
-      include ../includes/footer

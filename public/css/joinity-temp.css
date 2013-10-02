@@ -17,3 +17,12 @@ body {
 .ui.header {
   font-family: 'Source Sans Pro', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
+
+a {
+  text-decoration:none;
+  color:#555555;
+}
+
+a:hover {
+  color:#777777;
+}
