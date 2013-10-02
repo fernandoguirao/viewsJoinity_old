@@ -1,0 +1,46 @@
+.jSearchModal.ui.basic.modal
+  i.close.icon.blue
+  .header
+  .content
+    //Búsqueda inicial
+    .ui.form
+      .field
+        .ui.massive.icon.input
+          input(type="text",placeholder="Find plans, products, users, groups or places")
+          i.search.icon
+        .ui.large.blue.submit.button Search
+    //Resultados
+    .ui.grid
+      .four.wide.column
+        .ui.tabular.filter.vertical.menu
+          a.item.active(data-tab='joinitys') Joinitys
+          a.item(data-tab='usuarios') Usuarios
+          a.item(data-tab='eventos') Eventos
+          a.item(data-tab='aficiones') Aficiones
+          a.item(data-tab='lugares') Lugares
+      .ten.wide.column
+        .ui.divided.inbox.selection.list.tab.active(data-tab='joinitys')
+          a.item
+            | Weekly Webcomic Wrapup fought the law, and the law won
+          a.item
+            | Scientists discover new breed of dog
+        .ui.divided.inbox.selection.list.tab(data-tab='usuarios')
+          a.item
+            | Weekly Webcomic Wrapup fought the law, and the law won
+          a.item
+            | Scientists discover new breed of dog
+        .ui.divided.inbox.selection.list.tab(data-tab='eventos')
+          a.item
+            | Weekly Webcomic Wrapup fought the law, and the law won
+          a.item
+            | Scientists discover new breed of dog
+        .ui.divided.inbox.selection.list.tab(data-tab='aficiones')
+          a.item
+            | Weekly Webcomic Wrapup fought the law, and the law won
+          a.item
+            | Scientists discover new breed of dog
+        .ui.divided.inbox.selection.list.tab(data-tab='lugares')
+          a.item
+            | Weekly Webcomic Wrapup fought the law, and the law won
+          a.item
+            | Scientists discover new breed of dog

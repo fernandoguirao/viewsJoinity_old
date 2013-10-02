@@ -12,3 +12,18 @@ $('.jLeftBar .ui.dropdown')
 $('.jLeftBar .ui.accordion')
   .accordion()
 ;
+
+/* Modal buscador */
+$('.jSearchModal .ui.modal')
+  .modal()
+;
+
+$('.jSearchBtn').click(function(){
+  $('.jSearchModal.ui.modal').modal('show')
+  ;
+})
+
+/* Tabs buscador */
+$('.jSearchModal .filter.menu .item')
+  .tab()
+;
