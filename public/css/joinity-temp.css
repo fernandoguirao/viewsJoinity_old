@@ -47,3 +47,11 @@ text-transform: uppercase;
 .ui.basic.modal {
   color: gray;
 }
+
+.ui.items>.item {
+  min-height:0;
+}
+
+.ui.one.items>.item {
+  width: 85%;
+}

@@ -8,6 +8,12 @@ $('.jLeftBar .ui.dropdown')
   })
 ;
 
+/* Dropdown selector en jRightBar */
+$('.jRightBar .dropdown')
+  .dropdown({
+  })
+;
+
 /* Acordeón de jLeftBar joinitys */
 $('.jLeftBar .ui.accordion')
   .accordion()
