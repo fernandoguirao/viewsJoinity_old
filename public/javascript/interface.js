@@ -23,6 +23,17 @@ $('.jSearchBtn').click(function(){
   ;
 })
 
+/* Modal prueba */
+$('.jModal .ui.modal')
+  .modal()
+;
+
+$('.jModalBtn').click(function(){
+  $('.jModal.ui.modal').modal('show')
+  ;
+})
+
+
 /* Tabs buscador */
 $('.jSearchModal .filter.menu .item')
   .tab()

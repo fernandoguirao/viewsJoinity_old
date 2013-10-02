@@ -8,5 +8,5 @@ exports.index = function(req, res){
 };
 
 exports.home = function(req, res){
-  res.render('layouts/home', { title: 'Express' });
+  res.render('home/index', { title: 'Express' });
 };

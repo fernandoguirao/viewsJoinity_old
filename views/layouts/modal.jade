@@ -1,10 +1,10 @@
-.ui.modal
-  i.close.icon
+.jModal.ui.modal
+  i.close.icon.blue
   .header
-    Modal title
+    block modalTitle
   .content
-    .left Content can appear on left
-    .right Content can appear on right
+    block modalBody
     .actions
-      .ui.button Cancel
-      .ui.button Ok
+      block modalActions
+      //.ui.button Cancel
+      //.ui.button Ok
