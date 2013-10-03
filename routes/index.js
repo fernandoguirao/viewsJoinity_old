@@ -14,3 +14,7 @@ exports.login = function(req, res){
 exports.messages = function(req, res){
   res.render('pages/messages/index', { title: 'Messages' });
 };
+
+exports.profile = function(req, res){
+  res.render('pages/profile/index', { title: 'Profile' });
+};
