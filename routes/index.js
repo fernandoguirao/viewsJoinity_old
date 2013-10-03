@@ -4,9 +4,9 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+  res.render('pages/home/index', { title: 'Express' });
 };
 
-exports.home = function(req, res){
-  res.render('home/index', { title: 'Express' });
+exports.login = function(req, res){
+  res.render('pages/login/index', { title: 'Express' });
 };
