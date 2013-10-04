@@ -1,0 +1,23 @@
+.ui.big.center.aligned.header(style="background-image:url('/images/joinity-temp/avatar.jpeg')")
+  //img(src="/images/joinity-temp/avatar.jpeg",alt="").ui.image.floated
+  p.ui.small.rounded.image
+    img(src="/images/joinity-temp/avatar.jpeg",alt="")
+  h2
+    .content userFullName
+      .sub.header userCity, userBirthDate
+
+  .ui.small.images
+    img.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
+    img.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
+    img.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
+    img.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
+
+  a.ui.labelled.icon.inline.button(href="/user/me/edit")
+    i.edit.icon
+    | Edit
+  a.ui.labelled.icon.inline.button(href="/user/me/contacts")
+    i.users.icon
+    | Contacts
+  a.ui.labelled.icon.inline.button(href="/user/me")
+    i.users.icon
+    | Profile
