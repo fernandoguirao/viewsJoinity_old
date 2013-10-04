@@ -26,13 +26,13 @@
 
 .item.ui.two.column.grid
   .column
-    img.rounded.ui.image(src="images/joinity-temp/avatar.jpeg",alt="")
+    img.rounded.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
   .column
     // Añadir enlaces páginas
     .item
-      a(href="/profile") My profile
+      a(href="/user/me") My profile
     .item
-      a(href="") Contacts
+      a(href="/user/me/contacts") Contacts
     .item
       a(href="") Bills
     .item
@@ -56,7 +56,7 @@
 .item.ui.accordion
   //Asignamos una imagen específica para cada tipo de joinity (hobbies, compras y aficiones)
   .active.title
-    img.ui.avatar.image(src="images/joinity-temp/avatar.jpeg")
+    img.ui.avatar.image(src="/images/joinity-temp/avatar.jpeg")
     | Hobbies
   .content
     // Lista de categorías de tipo de joinity del usuario (ejemplo: ajedrez, surf, etc.)
@@ -65,7 +65,7 @@
     .item
       a(href="") myHobbyCathegory02
   .active.title
-    img.ui.avatar.image(src="images/joinity-temp/avatar.jpeg")
+    img.ui.avatar.image(src="/images/joinity-temp/avatar.jpeg")
     | Shoppings
   .content
     .item
@@ -73,7 +73,7 @@
     .item
       a(href="") myHobbyCathegory02
   .active.title
-    img.ui.avatar.image(src="images/joinity-temp/avatar.jpeg")
+    img.ui.avatar.image(src="/images/joinity-temp/avatar.jpeg")
     | Family & friends
   .content
     .item

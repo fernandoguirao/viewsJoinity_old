@@ -15,6 +15,14 @@ exports.messages = function(req, res){
   res.render('pages/messages/index', { title: 'Messages' });
 };
 
-exports.profile = function(req, res){
-  res.render('pages/profile/index', { title: 'Profile' });
+exports.user = function(req, res){
+  res.render('pages/user/index', { title: 'Profile' });
+};
+
+exports.useredit = function(req, res){
+  res.render('pages/user/edit/index', { title: 'Profile' });
+};
+
+exports.usercontacts = function(req, res){
+  res.render('pages/user/contacts/index', { title: 'Profile' });
 };

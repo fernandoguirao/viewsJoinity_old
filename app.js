@@ -32,7 +32,9 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/login', routes.login);
 app.get('/messages', routes.messages);
-app.get('/profile', routes.profile);
+app.get('/user/me', routes.user);
+app.get('/user/me/contacts', routes.usercontacts);
+app.get('/user/me/edit', routes.useredit);
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
