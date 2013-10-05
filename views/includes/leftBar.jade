@@ -30,19 +30,19 @@
   .column
     // Añadir enlaces páginas
     .item
-      a(href="/user/me") My profile
+      a(href="/user") My profile
     .item
-      a(href="/user/me/contacts") Contacts
+      a(href="/user/contacts") Contacts
     .item
       a(href="") Bills
     .item
-      a(href="") Settings
+      a(href="/user/settings") Settings
     .item
-      a(href="") Logout
+      a(href="/unloged") Logout
 
 .item
   //Enlace a página
-  a.fluid.ui.button(href="") Create a joinity
+  a.fluid.ui.button(href="/joinitys/create") Create a joinity
 
 .item
   //Dispara acción buscar
@@ -50,7 +50,7 @@
     i.search.icon
 
 .item
-  a.ui.label(href="") All
+  a.ui.label(href="/joinitys") All
   a(href="") My joinitys
 
 .item.ui.accordion
@@ -61,38 +61,42 @@
   .content
     // Lista de categorías de tipo de joinity del usuario (ejemplo: ajedrez, surf, etc.)
     .item
-      a(href="") myHobbyCathegory01
+      a(href="/joinitys/hobbies/hobbyName") myHobbyCathegory01
     .item
-      a(href="") myHobbyCathegory02
+      a(href="/joinitys/hobbies/hobbyName") myHobbyCathegory02
   .active.title
     img.ui.avatar.image(src="/images/joinity-temp/avatar.jpeg")
     | Shoppings
   .content
     .item
-      a(href="") myHobbyCathegory01
+      a(href="/joinitys/hobbies/hobbyName") myHobbyCathegory01
     .item
-      a(href="") myHobbyCathegory02
+      a(href="/joinitys/hobbies/hobbyName") myHobbyCathegory02
   .active.title
     img.ui.avatar.image(src="/images/joinity-temp/avatar.jpeg")
     | Family & friends
   .content
     .item
-      a(href="") myHobbyCathegory01
+      a(href="/joinitys/hobbies/hobbyName") myHobbyCathegory01
     .item
-      a(href="") myHobbyCathegory02
+      a(href="/joinitys/hobbies/hobbyName") myHobbyCathegory02
 .item
   // Si hay notificaciones
   .ui.label 1
-  a(href="") my Tasks
+  a(href="/tasks") my Tasks
 .item
   // Si hay notificaciones
   .ui.label 3
-  a(href="") my Events
+  a(href="/events/eventName") my Events
 .item
   // Si hay notificaciones
   .ui.label 2
-  a(href="") my Shoppings
+  a(href="/shoppings") my Shoppings
 a(href="/messages").item
   // Si hay notificaciones
   .ui.label 4
   | Messages
+a(href="/reservations").item
+  // Si hay notificaciones
+  .ui.label 4
+  | Reservations
