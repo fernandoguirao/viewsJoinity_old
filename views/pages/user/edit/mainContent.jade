@@ -25,19 +25,19 @@ h3.ui.header Edit your personal information
       .grouped.inline.fields
         .field
           .ui.radio.checkbox
-            input(type="radio",name="example")
-            label
-          label Male
+            input#radio-id-01(type="radio",name="gender")
+            label(for="radio-id-01")
+          label(for="radio-id-01") Male
         .field
           .ui.radio.checkbox
-            input(type="radio",name="example")
-            label
-          label Female
+            input#radio-id-02(type="radio",name="gender")
+            label(for="radio-id-02")
+          label(for="radio-id-02") Female
         .field
           .ui.radio.checkbox
-            input(type="radio",name="example")
-            label
-          label Other
+            input#radio-id-03(type="radio",name="gender")
+            label(for="radio-id-03")
+          label(for="radio-id-03") Other
   .row
     .wide.five.column
       p Age
@@ -58,8 +58,11 @@ h3.ui.header Edit your personal information
       p Company
     .wide.eleven.column.field
       input(placeholder="Company" type="text")
-.ui.submit.massive.button Save
-  
+  .row
+    .wide.five.column
+    .wide.eleven.column.field
+      .ui.submit.massive.button Save changes
+
 h3.ui.header Edit your interests
 .ui.horizontal.section.divider
 
