@@ -133,7 +133,7 @@ exports.userLogin = function(req, res){
   res.render('pages/user/login/index', { title: 'Login' });
 };
 
-exports.userLogin = function(req, res){
+exports.userSettings = function(req, res){
   res.render('pages/user/settings/index', { title: 'Settings' });
 };
 

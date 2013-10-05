@@ -68,6 +68,9 @@ app.get('/user/userName', routes.userUser);
 app.get('/user/login', routes.userLogin);
 app.get('/user/contacts', routes.userContacts);
 app.get('/user/edit', routes.userEdit);
+app.get('/user/settings', routes.userSettings);
+
+/* OTROS */
 app.get('/user/userName', user.list);
 
 /* END ROUTES */
