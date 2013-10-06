@@ -1,0 +1,8 @@
+extends ../../../layouts/layout-modal-add-image
+block modalImageTitle
+  p Upload an image
+block modalImageBody
+  input.uploadImage(name="uploadImage",type="file")
+block modalImageActions
+  .ui.big.green.button Upload it!
+  .ui.big.red.button Cancel
