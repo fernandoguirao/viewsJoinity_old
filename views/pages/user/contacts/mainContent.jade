@@ -21,26 +21,25 @@ h3.ui.header Contacts
           .field
             .ui.button Search
 
-.ui.one.items.grid
-  .wide.two.column
+.ui.grid
+  .wide.three.column
     img(src='/images/joinity-temp/avatar.jpeg').ui.image
-  .wide.fourteen.column
-    h4.ui.header
+  .wide.thirteen.column
+    .ui.header
       .content contactName
-        .sub.header
-          .ui.grid
-            .row
-              .wide.seven.column
-                | contactEmail
-              .wide.one.column
-              .wide.seven.column
-                | contactLocation
-            .row
-              .wide.eight.column
-                .ui.green.small.button
-                  i.ui.user.icon
-                  | View
-              .wide.eight.column
-                .ui.red.small.button
-                  i.ui.remove.icon
-                  | Remove
+      .sub.header
+        .ui.grid.three.column
+          .row
+            .wide.column
+              | contactEmail
+            .wide.column
+              | contactLocation
+          .row
+            .wide.eight.column
+              .ui.labelled.icon.inline.green.small.button
+                i.ui.user.icon
+                | View
+            .wide.eight.column
+              .ui.labelled.icon.inline.red.small.button
+                i.ui.remove.icon
+                | Remove
