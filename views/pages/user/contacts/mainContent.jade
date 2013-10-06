@@ -1,63 +1,46 @@
 include ../headerProfile
 
-h3.ui.header Personal information
+h3.ui.header Contacts
 .ui.horizontal.section.divider
 
-.ui.grid
-  .row
-    .wide.five.column
-      p Name
-    .wide.eleven.column
-      p userFullName
-  .row
-    .wide.five.column
-      p Email
-    .wide.eleven.column
-      p userEmail
-  .row
-    .wide.five.column
-      p Gender
-    .wide.eleven.column
-      p userGender
-  .row
-    .wide.five.column
-      p Age
-    .wide.eleven.column
-      p userAge
-  .row
-    .wide.five.column
-      p Town
-    .wide.eleven.column
-      p userCity
-  .row
-    .wide.five.column
-      p College or center
-    .wide.eleven.column
-      p userCollege
-  .row
-    .wide.five.column
-      p Company
-    .wide.eleven.column
-      p userCompany
-  .row
-    .wide.five.column
-      p Rating
-    .wide.eleven.column
-      p userRating
+.ui.one.items
+  .ui.form.grid.item
+    .row
+      .wide.five.column
+        p Filter your contacts
+      .wide.eleven.column
+        .field
+          input(placeholder="Search by name or email or location",type="text")
+    .row
+      .wide.five.column
+        p Search for new contacts
+      .wide.eleven.column
+        .inline.fields
+          .field
+            input(placeholder="Search by name or email or location",type="text")
+          .field
+            .ui.button Search
 
-h3.ui.header Interests
-.ui.horizontal.section.divider
-
-.ui.grid
-  a.wide.four.column(href="")
-    img.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
-    p interestTitle
-  a.wide.four.column(href="")
-    img.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
-    p interestTitle
-  a.wide.four.column(href="")
-    img.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
-    p interestTitle
-  a.wide.four.column(href="")
-    img.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
-    p interestTitle
+.ui.one.items.grid
+  .wide.two.column
+    img(src='/images/joinity-temp/avatar.jpeg').ui.image
+  .wide.fourteen.column
+    h4.ui.header
+      .content contactName
+        .sub.header
+          .ui.grid
+            .row
+              .wide.seven.column
+                | contactEmail
+              .wide.one.column
+              .wide.seven.column
+                | contactLocation
+            .row
+              .wide.eight.column
+                .ui.green.small.button
+                  i.ui.user.icon
+                  | View
+              .wide.eight.column
+                .ui.red.small.button
+                  i.ui.remove.icon
+                  | Remove

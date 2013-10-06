@@ -67,31 +67,155 @@ h3.ui.header Edit your interests
 .ui.horizontal.section.divider
 
 h4.ui.header Hobbies
-p Wich ones are your favorites?
 
-.ui.form
-  .ui.three.fields
-    .field
-      label Category
+.ui.form.grid
+  .row
+    .wide.five.column
+      p Wich ones are your favourites
+    .wide.eleven.column
+      .field
+        label Category
         .ui.edituser.selection.dropdown
           i.dropdown.icon
           .text categoryName01
           .menu.ui.transition.hidden
             .item categoryName01
             .item categoryName02
-    .field
-      label Hobby
+      .field
+        label Hobby
         .ui.edituser.selection.dropdown
           i.dropdown.icon
           .text hobbyName01
           .menu.ui.transition.hidden
             .item hobbyName01
             .item hobbyName02
-    .field
-      label _
-      .ui.submit.button Add hobby
-  .inline.field
-    p Don't find your hobby in the list?
-    .ui.submit.button Add one
-    
+      .field
+        label
+        .ui.submit.button Add hobby
 
+  .row
+    .wide.five.column
+      p Did't found your hobby in the list?
+    .wide.eleven.column
+      .field
+        input(placeholder="Name your hobby",type="text")
+      .field
+        .ui.submit.button Add it to joinity
+
+  .row
+    .wide.five.column
+      p Your hobbies
+    .wide.eleven.column
+      .ui.inline.fields
+        .field
+          .ui.checkbox
+            input#checkbox-id-01(type="checkbox")
+            label.box(for="checkbox-id-01")
+          label(for="checkbox-id-01") HobbyName
+        .field
+          .ui.checkbox
+            input#checkbox-id-02(type="checkbox")
+            label.box(for="checkbox-id-02")
+          label(for="checkbox-id-02") HobbyName
+        .field
+          .ui.checkbox
+            input#checkbox-id-03(type="checkbox")
+            label.box(for="checkbox-id-03")
+          label(for="checkbox-id-03") HobbyName
+        .field
+          .ui.checkbox
+            input#checkbox-id-04(type="checkbox")
+            label.box(for="checkbox-id-04")
+          label(for="checkbox-id-04") HobbyName
+      .field
+        .ui.submit.button Save your changes
+
+h4.ui.header Products
+
+.ui.form.grid
+  .row
+    .wide.five.column
+      p Wich ones are your favourites
+    .wide.eleven.column
+      .field
+        label Category
+        .ui.edituser.selection.dropdown
+          i.dropdown.icon
+          .text categoryName01
+          .menu.ui.transition.hidden
+            .item categoryName01
+            .item categoryName02
+      .field
+        label Product
+        .ui.edituser.selection.dropdown
+          i.dropdown.icon
+          .text productName01
+          .menu.ui.transition.hidden
+            .item productName01
+            .item productName02
+      .field
+        label
+        .ui.submit.button Add product
+
+  .row
+    .wide.five.column
+      p Did't found your product in the list?
+    .wide.eleven.column
+      .field
+        input(placeholder="Name your hobby",type="text")
+      .field
+        .ui.submit.button Add it to joinity
+
+  .row
+    .wide.five.column
+      p Your Products
+    .wide.eleven.column
+      .ui.inline.fields
+        .field
+          .ui.checkbox
+            input#checkbox-product-id-01(type="checkbox")
+            label.box(for="checkbox-id-01")
+          label(for="checkbox-id-01") ProductName
+        .field
+          .ui.checkbox
+            input#checkbox-product-id-02(type="checkbox")
+            label.box(for="checkbox-id-02")
+          label(for="checkbox-id-02") ProductName
+        .field
+          .ui.checkbox
+            input#checkbox-product-id-03(type="checkbox")
+            label.box(for="checkbox-id-03")
+          label(for="checkbox-id-03") ProductName
+        .field
+          .ui.checkbox
+            input#checkbox-product-id-04(type="checkbox")
+            label.box(for="checkbox-id-04")
+          label(for="checkbox-id-04") ProductName
+      .field
+        .ui.submit.button Save your changes
+
+h3.ui.header Images
+.ui.horizontal.section.divider
+
+.ui.form.grid
+  .row
+    .wide.five.column
+      p Cover image
+    .wide.eleven.column
+      include addImageModal
+      .ui.jModalBtn.button Upload one now
+  .row
+    .wide.five.column
+      p Profile image
+    .wide.eleven.column
+      include addImageModal
+      .ui.jModalBtn.button Upload one now
+  .row
+    .wide.five.column
+      p Hobbies images
+        span  –Pictures of you doing awesome things
+    .wide.eleven.column
+      include addImageModal
+      .ui.jModalBtn.button Upload one
+      .ui.jModalBtn.button Upload another
+      .ui.jModalBtn.button Upload one more
