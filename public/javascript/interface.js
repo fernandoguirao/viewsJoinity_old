@@ -38,8 +38,12 @@ $('.jModalBtn').click(function(){
   ;
 })
 
-
 /* Tabs buscador */
 $('.jSearchModal .filter.menu .item')
   .tab()
+;
+
+/* Dropdown selector en user/Edit */
+$('.edituser.dropdown')
+  .dropdown({action: 'updateForm'})
 ;
