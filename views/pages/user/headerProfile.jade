@@ -1,5 +1,8 @@
+- var variables = 'prueba superada';
+friends = { hey:'hea' }
+
 .ui.big.center.aligned.header(style="background-image:url('/images/joinity-temp/avatar.jpeg')")
-  //img(src="/images/joinity-temp/avatar.jpeg",alt="").ui.image.floated
+  //- img(src="/images/joinity-temp/avatar.jpeg",alt="").ui.image.floated
   p.ui.small.rounded.image
     img(src="/images/joinity-temp/avatar.jpeg",alt="")
   h2
@@ -14,10 +17,13 @@
 
   a.ui.labelled.icon.inline.button(href="/user/edit")
     i.edit.icon
-    | Edit
+    | Edit #{hey}
   a.ui.labelled.icon.inline.button(href="/user/contacts")
     i.users.icon
     | Contacts
   a.ui.labelled.icon.inline.button(href="/user")
     i.users.icon
     | Profile
+  a.ui.labelled.icon.inline.button(href="/user/settings")
+    i.users.icon
+    | Settings
