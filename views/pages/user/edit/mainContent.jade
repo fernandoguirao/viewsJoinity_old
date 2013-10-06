@@ -66,16 +66,32 @@ h3.ui.header Edit your personal information
 h3.ui.header Edit your interests
 .ui.horizontal.section.divider
 
-.ui.grid
-  a.wide.four.column(href="")
-    img.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
-    p interestTitle
-  a.wide.four.column(href="")
-    img.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
-    p interestTitle
-  a.wide.four.column(href="")
-    img.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
-    p interestTitle
-  a.wide.four.column(href="")
-    img.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
-    p interestTitle
+h4.ui.header Hobbies
+p Wich ones are your favorites?
+
+.ui.form
+  .ui.three.fields
+    .field
+      label Category
+        .ui.edituser.selection.dropdown
+          i.dropdown.icon
+          .text categoryName01
+          .menu.ui.transition.hidden
+            .item categoryName01
+            .item categoryName02
+    .field
+      label Hobby
+        .ui.edituser.selection.dropdown
+          i.dropdown.icon
+          .text hobbyName01
+          .menu.ui.transition.hidden
+            .item hobbyName01
+            .item hobbyName02
+    .field
+      label _
+      .ui.submit.button Add hobby
+  .inline.field
+    p Don't find your hobby in the list?
+    .ui.submit.button Add one
+    
+
