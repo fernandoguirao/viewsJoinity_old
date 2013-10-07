@@ -1,7 +1,6 @@
-- var variables = 'prueba superada';
-friends = { hey:'hea' }
+include ../../mixins/modal-image
 
-.ui.big.center.aligned.header(style="background-image:url('/images/joinity-temp/avatar.jpeg')")
+.ui.big.center.aligned.header(style="background-image:url('/images/joinity-temp/background.jpg')")
   //- img(src="/images/joinity-temp/avatar.jpeg",alt="").ui.image.floated
   p.ui.small.rounded.image
     img(src="/images/joinity-temp/avatar.jpeg",alt="")
@@ -10,10 +9,10 @@ friends = { hey:'hea' }
       .sub.header userCity, userBirthDate
 
   .ui.small.images
-    img.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
-    img.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
-    img.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
-    img.ui.image(src="/images/joinity-temp/avatar.jpeg",alt="")
+    mixin modal-image('editUser-header-image01','/images/joinity-temp/avatar.jpeg','ui image')
+    mixin modal-image('editUser-header-image02','/images/joinity-temp/avatar.jpeg','ui image')
+    mixin modal-image('editUser-header-image03','/images/joinity-temp/avatar.jpeg','ui image')
+    mixin modal-image('editUser-header-image04','/images/joinity-temp/avatar.jpeg','ui image')
 
   a.ui.labelled.icon.inline.button(href="/user/edit")
     i.edit.icon

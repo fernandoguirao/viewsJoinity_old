@@ -1,5 +1,7 @@
 include ../headerProfile
-
+include ../../../mixins/add-image
+include ../../../mixins/checkbox
+include ../../../mixins/select
 
 h3.ui.header Edit your personal information
 .ui.horizontal.section.divider
@@ -23,21 +25,9 @@ h3.ui.header Edit your personal information
       p Gender
     .wide.eleven.column.field
       .grouped.inline.fields
-        .field
-          .ui.radio.checkbox
-            input#radio-id-01(type="radio",name="gender")
-            label(for="radio-id-01")
-          label(for="radio-id-01") Male
-        .field
-          .ui.radio.checkbox
-            input#radio-id-02(type="radio",name="gender")
-            label(for="radio-id-02")
-          label(for="radio-id-02") Female
-        .field
-          .ui.radio.checkbox
-            input#radio-id-03(type="radio",name="gender")
-            label(for="radio-id-03")
-          label(for="radio-id-03") Other
+      
+        mixin checkbox('radio','checkR',['Male','Female','Other'] )
+      
   .row
     .wide.five.column
       p Age
@@ -73,22 +63,8 @@ h4.ui.header Hobbies
     .wide.five.column
       p Wich ones are your favourites
     .wide.eleven.column
-      .field
-        label Category
-        .ui.edituser.selection.dropdown
-          i.dropdown.icon
-          .text categoryName01
-          .menu.ui.transition.hidden
-            .item categoryName01
-            .item categoryName02
-      .field
-        label Hobby
-        .ui.edituser.selection.dropdown
-          i.dropdown.icon
-          .text hobbyName01
-          .menu.ui.transition.hidden
-            .item hobbyName01
-            .item hobbyName02
+      mixin select ('Category', 'editUser-category' , ['categoryName01','categoryName02'] )
+      mixin select ('Hobby', 'editUser-hobby' , ['hobbyName01','hobbyName02'] )
       .field
         label
         .ui.submit.button Add hobby
@@ -107,26 +83,9 @@ h4.ui.header Hobbies
       p Your hobbies
     .wide.eleven.column
       .ui.inline.fields
-        .field
-          .ui.checkbox
-            input#checkbox-id-01(type="checkbox")
-            label.box(for="checkbox-id-01")
-          label(for="checkbox-id-01") HobbyName
-        .field
-          .ui.checkbox
-            input#checkbox-id-02(type="checkbox")
-            label.box(for="checkbox-id-02")
-          label(for="checkbox-id-02") HobbyName
-        .field
-          .ui.checkbox
-            input#checkbox-id-03(type="checkbox")
-            label.box(for="checkbox-id-03")
-          label(for="checkbox-id-03") HobbyName
-        .field
-          .ui.checkbox
-            input#checkbox-id-04(type="checkbox")
-            label.box(for="checkbox-id-04")
-          label(for="checkbox-id-04") HobbyName
+
+        mixin checkbox('checkbox','checkH',['hobbyName01','hobbyName02','hobbyName03'] )
+
       .field
         .ui.submit.button Save your changes
 
@@ -137,22 +96,8 @@ h4.ui.header Products
     .wide.five.column
       p Wich ones are your favourites
     .wide.eleven.column
-      .field
-        label Category
-        .ui.edituser.selection.dropdown
-          i.dropdown.icon
-          .text categoryName01
-          .menu.ui.transition.hidden
-            .item categoryName01
-            .item categoryName02
-      .field
-        label Product
-        .ui.edituser.selection.dropdown
-          i.dropdown.icon
-          .text productName01
-          .menu.ui.transition.hidden
-            .item productName01
-            .item productName02
+      mixin select ('Category', 'editUser-category-product' , ['categoryName01','categoryName02'] )
+      mixin select ('Product', 'editUser-category-product' , ['productName01','prodyctName02'] )
       .field
         label
         .ui.submit.button Add product
@@ -171,26 +116,9 @@ h4.ui.header Products
       p Your Products
     .wide.eleven.column
       .ui.inline.fields
-        .field
-          .ui.checkbox
-            input#checkbox-product-id-01(type="checkbox")
-            label.box(for="checkbox-id-01")
-          label(for="checkbox-id-01") ProductName
-        .field
-          .ui.checkbox
-            input#checkbox-product-id-02(type="checkbox")
-            label.box(for="checkbox-id-02")
-          label(for="checkbox-id-02") ProductName
-        .field
-          .ui.checkbox
-            input#checkbox-product-id-03(type="checkbox")
-            label.box(for="checkbox-id-03")
-          label(for="checkbox-id-03") ProductName
-        .field
-          .ui.checkbox
-            input#checkbox-product-id-04(type="checkbox")
-            label.box(for="checkbox-id-04")
-          label(for="checkbox-id-04") ProductName
+      
+        mixin checkbox('checkbox','checkP',['productName01','productName02','productName03'] )
+      
       .field
         .ui.submit.button Save your changes
 
@@ -202,20 +130,17 @@ h3.ui.header Images
     .wide.five.column
       p Cover image
     .wide.eleven.column
-      include addImageModal
-      .ui.jModalBtn.button Upload one now
+      mixin add-image('editUser-cover-addImg01', 'Upload it')
   .row
     .wide.five.column
       p Profile image
     .wide.eleven.column
-      include addImageModal
-      .ui.jModalBtn.button Upload one now
+      mixin add-image('editUser-profile-addImg01', 'Upload it')
   .row
     .wide.five.column
       p Hobbies images
         span  –Pictures of you doing awesome things
     .wide.eleven.column
-      include addImageModal
-      .ui.jModalBtn.button Upload one
-      .ui.jModalBtn.button Upload another
-      .ui.jModalBtn.button Upload one more
+      mixin add-image('editUser-addImg01', 'Upload one')
+      mixin add-image('editUser-addImg02', 'Upload another')
+      mixin add-image('editUser-addImg03', 'Upload one more')

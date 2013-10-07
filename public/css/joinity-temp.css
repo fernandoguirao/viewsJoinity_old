@@ -40,9 +40,11 @@ text-transform: uppercase;
   box-shadow:none;
 }
 
+/*
 .ui.dimmer {
   background-color:rgba(255,255,255,.85);
 }
+*/
 
 .ui.basic.modal {
   color: gray;

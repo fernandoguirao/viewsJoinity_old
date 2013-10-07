@@ -1,13 +1,9 @@
+include ../mixins/select
+
 .item
   h3 Plans right for you
 
-.ui.selection.dropdown
-  i.dropdown.icon
-  // Si hemos filtrado your hobbies cambia este texto
-  .text Near from you
-  .menu.ui.transition.hidden
-    .item Near from you
-    .item Your hobbies
+mixin select ('no label', 'filter-hobbies' , ['Near from you','Your hobbies'] )
 
 .ui.one.items
   a(href="/joinitys/hobbies/joinityName").item
